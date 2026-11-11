@@ -1,0 +1,4 @@
+// Hide the "Boards" link (.../community/boards) in the sidebar.
+.sidebar-section-link-wrapper:has(.sidebar-section-link[href$="/boards"]) {
+  display: none;
+}
