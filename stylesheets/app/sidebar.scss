@@ -1,4 +1,7 @@
-// Hide the "Boards" link (.../community/boards) in the sidebar.
-.sidebar-section-link-wrapper:has(.sidebar-section-link[href$="/boards"]) {
-  display: none;
+// Hide the built-in "Boards" link (.../community/boards) in the top
+// "Community" sidebar section only. Custom sections (e.g. "Admin") are untouched.
+.sidebar-section[data-section-name="community"] {
+  .sidebar-section-link-wrapper:has(.sidebar-section-link[href$="/boards"]) {
+    display: none;
+  }
 }
